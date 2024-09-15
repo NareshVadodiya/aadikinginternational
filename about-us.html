@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Aadiking International</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <style>
+        
+
+        /* Header section */
+        header {
+            background-color: #1a2928;
+            padding: 50px 0;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        /* About Us section */
+        .about-us {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: #fff;
+            padding: 50px 20px;
+        }
+
+        .about-us-content {
+            max-width: 1200px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .about-us-text {
+            flex: 1 1 600px;
+            padding: 20px;
+        }
+
+        .about-us-text h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .about-us-text p {
+            
+            line-height: 1.6;
+            color: #1a2323;
+            margin-bottom: 20px;
+        }
+
+        .about-us-img {
+            flex: 1 1 400px;
+            text-align: center;
+        }
+
+        .about-us-img img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+        }
+
+        /* Our Mission & Vision */
+        .mission-vision {
+            background-color: #f9f9f9;
+            padding: 50px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .mission, .vision {
+            flex: 1 1 45%;
+            padding: 20px;
+        }
+
+        .mission h3, .vision h3 {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .mission p, .vision p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #1a2323;
+        }
+
+     
+    
+
+       
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background-color: #1a2928;
+            color: white;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+        .card-slider {
+    display: flex;
+    justify-content: space-between;
+}
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .about-us-content, .mission-vision-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .about-us-text, .mission, .vision {
+                flex: 1 1 100%;
+            }
+
+            .about-us-img {
+                margin-top: 20px;
+            }
+
+            button {
+                font-size: 16px;
+            }
+        }
+
+        
+
+        .card-slider {
+            display: flex;
+            overflow: hidden;
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            position: relative;
+        }
+
+        .card-container {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .card {
+            /* min-width: 300px; */
+            flex: 1 0 33.33%;
+            box-sizing: border-box;
+            padding: 20px;
+            color: #ddd;
+            margin: 10px;
+            background-color: #1a2928;
+            border-radius: 10px;
+            text-align: center;
+            border: 3px solid #ddd;
+            /* height: 230px; */
+        }
+
+        .card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Controls */
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 20px;
+            border-radius: 3px;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .card {
+                flex: 1 0 50%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                flex: 2 1 100%;
+            }
+        }
+
+        @media (max-width:990px) {
+  .card {
+    left: 70% !important;
+    transform: translateX(-70%) !important;
+  }
+}
+
+@media (max-width:450px) {
+  .card {
+    left: 80% !important;
+    transform: translateX(-80%) !important;
+  }
+}
+
+@media (max-width:990px) {
+  .card{
+    left: 30% !important;
+    transform: translateX(-30%) !important;
+  }
+}
+
+@media (max-width:450px) {
+  .card{
+    left: 20% !important;
+    transform: translateX(-20%) !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+        .about-us-heading{
+            font-size: 52px;
+            font-weight: bolder;
+        }
+        button.btn.btn-secondary.mb-5 {
+    padding: 10px;
+    border: 2px solid;
+    background: #1a2928;
+    text-decoration: none;
+    color: white;
+}
+
+.back-blog{
+    color: #fff;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.back-blog:hover{
+    /* background-color: #f0f2f5; */
+    color: #b79954;
+}
+
+.image-about-us:hover{
+  background-color: rgb(24, 22, 22);
+  opacity: 0.5;
+}
+
+    </style>
+</head>
+<body>
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>About Aadiking International</h1>
+    </header>
+
+    <!-- About Us Section -->
+    <section class="about-us">
+        <div class="about-us-content">
+            <div class="about-us-text">
+                <p class="about-us-heading">Who We Are</p>
+                <p class="about-us-content">Aadiking International is a global leader in delivering innovative solutions across industries. With a passion for excellence and a drive for sustainable success, we aim to empower businesses around the world by providing top-tier products and services. Our commitment is to create lasting value for our clients, partners, and stakeholders.</p>
+                <p>We work across diverse sectors, from import-export services to logistics and supply chain management, ensuring our clients achieve their business goals efficiently and cost-effectively. Our dedication to integrity and responsibility drives every decision we make.</p>
+            </div>
+            <div class="about-us-img">
+                <img  class="image-about-us"  src="about-us-image.jpg" alt="Aadiking International Team">
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision Section -->
+    <section class="mission-vision">
+        <div class="mission">
+            <p class="about-us-heading">Our Mission</p>
+            <p class="about-us-content">Our mission is to deliver world-class products and services that empower our clients and make a positive impact on the global market. We are committed to innovation, excellence, and sustainability in everything we do.</p>
+        </div>
+        <div class="vision">
+            <p class="about-us-heading">Our Vision</p>
+            <p class="about-us-content">Our vision is to be the leading global provider of innovative solutions across industries, continuously evolving to meet the challenges of the future while maintaining our core values of integrity and responsibility.</p>
+        </div>
+    </section>
+
+    <!-- Carousel Section -->
+    <div class="card-slider">
+        <div class="card-container mb-5">
+            <div class="card">
+                <img src="images/our team/Naresh-ceo.webp" alt="Member 1">
+                <div class="card-body">
+                    <h5 class="card-title">Naresh Vadodiya</h5>
+                    <p class="card-text">President & owner</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/our team/Nilesh.webp" alt="Member 2">
+                <div class="card-body">
+                    <h5 class="card-title">Nilesh Solanki</h5>
+                    <p class="card-text">HR Manager</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/our team/Dhrupal.webp" alt="Member 3">
+                <div class="card-body">
+                    <h5 class="card-title">Dhrupal Zala</h5>
+                    <p class="card-text">Chief International Trade Manager</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/our team/Vivek.webp" alt="Member 4">
+                <div class="card-body">
+                    <h5 class="card-title">Vivek Prajapati</h5>
+                    <p class="card-text">International Operations Manager-Logistics</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/our team/Jaimin.webp" alt="Member 4">
+                <div class="card-body">
+                    <h5 class="card-title">Jaimin Prajapati</h5>
+                    <p class="card-text">Plant Manager</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/our team/Mitul.webp" alt="Member 4">
+                <div class="card-body">
+                    <h5 class="card-title">Mitul Prajapati</h5>
+                    <p class="card-text">Production Manager</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/our team/Bhavik.webp" alt="Member 4">
+                <div class="card-body">
+                    <h5 class="card-title">Bhavik Chauhan</h5>
+                    <p class="card-text">Executive Manager</p>
+                </div>
+            </div>
+        </div>
+        <button class="prev">❮</button>
+        <button class="next">❯</button>
+    </div>
+
+    <div class="container-fluid  mb-3">
+        <div class="row">
+            <div class="col-md-12">
+                <center>
+                    <button class="btn btn-secondary mt-5 mb-5" > <a href="index.html" class="back-blog">Back Home</a></button>
+                  </center>
+                
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Aadiking International. All rights reserved.</p>
+    </footer>
+
+    <!-- Carousel JavaScript -->
+ <script src="js/about.js"></script>
+ <script src="js/scrollreveal.min.js"></script>
+    
+</body>
+</html>

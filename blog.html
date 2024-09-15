@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <title>Blogs</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f2f5;
+      color: #333;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      /* padding: 20px; */
+    }
+    h1 {
+        background-color: #1a2928;
+            padding: 50px 0;
+            text-align: center;
+            color: white;
+    }
+    .blog-grid {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      gap: 20px;
+    }
+
+    button.btn.btn-secondary.mt-5.mb-5 {
+    padding: 10px;
+    border: 2px solid;
+    background: #1a2928;
+    text-decoration: none;
+    color: white;
+}
+
+.back-blog{
+    color: #fff;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.back-blog:hover{
+    /* background-color: #f0f2f5; */
+    color: #b79954;
+}
+
+    .blog-post {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+    .blog-post img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .blog-post h2 {
+      font-size: 1.8rem;
+      color: #333;
+      margin-top: 15px;
+    }
+    .blog-post p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #666;
+    }
+    .sidebar {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+    .sidebar h3 {
+      font-size: 1.5rem;
+      color: #333;
+      margin-bottom: 15px;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+    .sidebar ul li {
+      margin-bottom: 10px;
+    }
+    .sidebar ul li a {
+      text-decoration: none;
+      color: #007bff;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+    .sidebar ul li a:hover {
+      color: #0056b3;
+    }
+    .pagination {
+      text-align: center;
+      margin: 30px 0;
+    }
+    .pagination a {
+      text-decoration: none;
+      color: #007bff;
+      font-size: 1rem;
+      margin: 0 10px;
+      transition: color 0.3s;
+    }
+    .pagination a:hover {
+      color: #0056b3;
+    }
+    .pagination span {
+      font-size: 1rem;
+      color: #333;
+      margin: 0 10px;
+    }
+    footer {
+    text-align: center;
+    background-color: #1a2928;
+    color: white;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .blog-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    @media (max-width: 480px) {
+      .blog-post h2 {
+        font-size: 1.5rem;
+      }
+      .blog-post p {
+        font-size: 0.9rem;
+      }
+      .sidebar h3 {
+        font-size: 1.2rem;
+      }
+      .sidebar ul li a {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+  <h1>Our Blogs</h1>
+
+  <div class="blog-grid">
+    <!-- Blog Posts -->
+    <div class="blog-post">
+      <img src="images/blog-image-two.jpg" alt="Blog Post Image">
+      <h2>India’s Top Imports: A Comprehensive Analysis by Country of Origin</h2>
+      <p>International trade is crucial in influencing economies in a world of interconnectivity. India is a major player in the world of imports thanks to its broad market and expanding economy. This blog dives into the specifics of India’s import sector, the operation of the Import Export Business, the major top nations from which India sources its imports, and the most imported goods in India.</p>
+      <a href="#" style="text-decoration: none; color: #007bff;">Read More</a>
+    </div>
+    
+    <div class="blog-post">
+      <img src="images/blog-image.jpg" alt="Blog Post Image">
+      <h2>Benefits and Challenges in Import Business: Import Business Insights</h2>
+      <p>Every country in this world trade with other countries. Exporters sell products to other countries and importers buy products from other countries. If you look at India, we exported goods worth Billion 447 $ and imported goods worth Billion 714 $. It means in India we are importing thousands of products from many countries. Hence import is quite a big business in India.</p>
+    </div>
+
+    <!-- Sidebar -->
+    <!-- <div class="sidebar">
+      <h3>About Us</h3>
+      <p>We are a company dedicated to providing the best services and products in the industry. Stay updated with our latest news and insights through our blog.</p>
+
+      <h3>Recent Posts</h3>
+      <ul>
+        <li><a href="/">Blog Post Title 1</a></li>
+        <li><a href="/">Blog Post Title 2</a></li>
+        <li><a href="/">Blog Post Title 3</a></li>
+      </ul>
+
+      <h3>Archives</h3>
+      <ul>
+        <li><a href="#">September 2024</a></li>
+        <li><a href="#">August 2024</a></li>
+        <li><a href="#">July 2024</a></li>
+      </ul>
+    </div>
+  </div>
+
+   Pagination -->
+  <!-- <div class="pagination">
+    <a href="#">&#60; Previous</a>
+    <span>Page 1 of 3</span>
+    <a href="#">Next &#62;</a>
+  </div> -->
+</div> 
+
+<div class="container-fluid mt-5 mb-5">
+    <div class="row">
+        <div class="col-md-12">
+            <center>
+                <button class="btn btn-secondary mt-5 mb-5" > <a href="index.html" class="back-blog">Back Home</a></button>
+              </center>
+            
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Aadiking International. All rights reserved.</p>
+</footer>
+
+
+</body>
+</html>
